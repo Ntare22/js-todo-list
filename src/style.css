@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  transition: 0.8s;
+  margin: 0 0;
+}
+
+body {
+  background-color: #dedbd8;
+}
+
+.todo-container {
+  background-color: #fff;
+  width: 35%;
+  margin: 150px auto;
+  padding: 20px 15px;
+}
+
+#input-todo {
+  width: 100%;
+  padding: 10px 2px;
+  margin-top: 12px;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #dedbd8;
+}
+
+.check-box {
+  float: left;
+  margin-top: 3px;
+  margin-right: 25px;
+}
+
+.delete-btn {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url('./assets/icons8-trash.svg') no-repeat;
+}
+
+.clear-btn {
+  width: 100%;
+  border: none;
+  height: 10%;
+  margin-top: 12px;
+  padding: 20px 0 !important;
+}
+
+.clear-btn:hover {
+  text-decoration: underline;
+}
+
+.list-text {
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  width: 82%;
+}
