@@ -42,6 +42,20 @@ function clearFinishedTasks() {
   localStorage.setItem('list', JSON.stringify(newList));
 }
 
+function checkCompleted(checkbox, item, list) {
+  checkbox.addEventListener('change', () => {
+    if (!item.completed) {
+      item.completed = true;
+      checkbox.checked = true;
+      localStorage.setItem('list', JSON.stringify(list));
+    } else {
+      item.completed = false;
+      checkbox.checked = false;
+      localStorage.setItem('list', JSON.stringify(list));
+    }
+  });
+}
+
 export {
-  editTask, removeTask, addTask, clearFinishedTasks,
+  editTask, removeTask, addTask, clearFinishedTasks, checkCompleted,
 };

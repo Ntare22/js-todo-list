@@ -1,9 +1,8 @@
 // eslint-disable-next-line import/no-cycle
 import {
-  removeTask, editTask, addTask, clearFinishedTasks,
+  removeTask, editTask, addTask, clearFinishedTasks, checkCompleted,
 } from './functions.js';
 import './style.css';
-import checkCompleted from './checkCompleted.js';
 
 const localStorageList = JSON.parse(localStorage.getItem('list'));
 
